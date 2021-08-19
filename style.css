@@ -319,6 +319,22 @@ nav {
   text-transform: uppercase;
 }
 
+/* contact */
+
+.contact_container {
+  display: flex;
+}
+
+.left {
+  width: 50%;
+  height: 100vh;
+  position: fixed;
+}
+.right {
+  margin-left: auto;
+  width: 50%;
+}
+
 @media (max-width: 768px) {
   .logo {
     font-size: 30px;
