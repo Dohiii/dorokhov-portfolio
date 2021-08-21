@@ -4,9 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      async
+      custom-element="amp-fx-collection"
+      src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"
+    ></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
@@ -19,7 +23,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
-    <title>VD</title>
+    <title>Contact</title>
   </head>
 
   <body>
@@ -88,5 +92,21 @@
       </ul>
     </footer>
     <!-- partial -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="rellax.min.js"></script>
+    <script>
+      //default JS Setting
+      var rellax = new Rellax(".rellax", {
+        breakpoints: [576, 768, 1201, 1900],
+      });
+    </script>
+    <script>
+      //Enable Horizontal Parallax Scrolling
+      var rellax = new Rellax(".rellax", {
+        horizontal: true,
+      });
+    </script>
   </body>
 </html>
