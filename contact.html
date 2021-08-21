@@ -32,42 +32,25 @@
         </div>
     </nav>
     </header>
-
-    <main>
-      <div class="line"></div>
-     <!-- partial:index.partial.html -->
-<div id="container">
-  <h1> Skontaktuj się </h1>
- 
-  
-  <form action="#" method="post" id="contact_form">
-    <div class="name">
-      <label for="name"></label>
-      <input type="text" placeholder="Immie" name="name" id="name_input" required>
-    </div>
-    <div class="email">
-      <label for="email"></label>
-      <input type="email" placeholder="Email" name="email" id="email_input" required>
-    </div>
-       <div class="subject">
-      <label for="subject"></label>
-      
-    </div>
-    <div class="message">
-      <label for="message"></label>
-      <textarea name="message" placeholder="I chce spytać o ...." id="message_input" cols="30" rows="5" required></textarea>
-    </div>
-    <div class="submit">
-      <input type="submit" value="Wyslać wiadomosć" id="form_button" />
-    </div>
-  </form><!-- // End form -->
-</div><!-- // End #container -->
-<!-- partial -->
-    </main>
     <div class="line"></div>
-    <footer class="footer">
+    <main>
+        <div id="container"> <form action="https://formspree.io/val.pcclinic@gmail.com" method="POST">
+            <input class="name" type="text" name="name" required placeholder="Imie">
+            <input class="email" type="email" name="email" required placeholder="Email">
+            <textarea type="textarea" name="textarea" required placeholder="Chce się spytac..."></textarea>
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+            <!-- <input type="hidden" name="_next" value="https://dorokhov-portfolio.pl/thanks.html"> -->
+            <div class="submit"><button id="form_button" type="submit">Send</button></div>
+                   </form> </div>
+       
+
+
+
+    </main>
     
-              <ul class="social">
+    <footer class="footer">
+                  <ul class="social">
                 <li><a class="link" href=""><i class="fab fa-github "></i></a></li>
                 <li><a class="link" href=""><i class="fab fa-linkedin "></i></a></li>
                 <li><a class="link" href=""><i class="fab fa-facebook "></i></a></li>

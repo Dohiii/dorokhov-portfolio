@@ -370,22 +370,9 @@ h1 {
 }
 
 .underline {
-  border-bottom: solid 2px #474544;
+  border-bottom: solid 1px #909090;
   margin: -0.512em auto;
   width: 80px;
-}
-
-.icon_wrapper {
-  margin: 50px auto 0;
-  width: 100%;
-}
-
-.icon {
-  display: block;
-  fill: #474544;
-  height: 50px;
-  margin: 0 auto;
-  width: 50px;
 }
 
 .email {
@@ -399,7 +386,7 @@ select,
 textarea {
   background: none;
   border: none;
-  border-bottom: solid 2px #474544;
+  border-bottom: solid 1px #909090;
   color: #474544;
   font-size: 1em;
   font-weight: 400;
@@ -462,6 +449,10 @@ textarea {
   resize: none;
   width: 100%;
 }
+.submit {
+  display: flex;
+  justify-content: center;
+}
 
 ::-webkit-input-placeholder {
   color: #474544;
@@ -482,16 +473,16 @@ textarea {
 }
 
 #form_button {
+  margin: 0 auto;
   background: none;
-  border: solid 2px #474544;
-  color: #474544;
+  border: solid 1px #909090;
+  color: #726f6d;
   cursor: pointer;
   display: inline-block;
-  font-family: "Helvetica", Arial, sans-serif;
   font-size: 0.875em;
   font-weight: bold;
   outline: none;
-  padding: 20px 35px;
+  padding: 15px 65px;
   text-transform: uppercase;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -501,7 +492,7 @@ textarea {
 }
 
 #form_button:hover {
-  background: #474544;
+  background: #909090;
   color: #f2f3eb;
 }
 
