@@ -21,133 +21,57 @@
 <body>
     <header class="header">
 
-        <nav>
-            <div class="navbar" id="navbar">
-                <a class="logo" href="">Valerii Dorokhov</a>
-                <ul class="nav-list">
-                    <li><a class="link" href="o_mnie.html">O Mnie</a></li>
-                    <li><a class="link" href="">Projecty</a></li>
-                    <li><a class="link" href="">contact</a></li>
-                    </ul>
-            </div>
-        </nav>
-        
+      <nav>
+        <div class="navbar" id="navbar">
+            <a class="logo" href="index.html">Valerii Dorokhov</a>
+            <ul class="nav-list">
+                <li><a class="link" href="index.html">O Mnie</a></li>
+                <li><a class="link" href="projecty.html">Projecty</a></li>
+                <li><a class="link" href="contact.html">contact</a></li>
+                </ul>
+        </div>
+    </nav>
     </header>
 
     <main>
-        <div class="contact_container"> <section class="left"><div class="text" data-rellax-zindex="2">
-            <div class="text-content" data-rellax-zindex="2">
-                <h3 >O Mnie</h3>
-                <p>
-                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut molestiae, at modi animi assumenda, exercitationem deleniti nihil eaque deserunt et sit? Reprehenderit ea ratione deleniti!
-                </p>
-            </div>
-        </div></section>
-        <section class="right"> 
-        
-<!-- partial:index.partial.html -->
-<div class="cards-list">
+      <div class="line"></div>
+     <!-- partial:index.partial.html -->
+<div id="container">
+  <h1> Skontaktuj się </h1>
  
-<div class="card-row"><div class="card 1" >
-  <div class="card_image"> <img src="./img/card_stainia.png" /> </div>
-  <div class="card_title title-white">
-    <p>Card Title</p>
-  </div>
-</div>
-
-  <div class="card 2">
-  <div class="card_image">
-    <img src="./img/card_bake.png" />
+  
+  <form action="#" method="post" id="contact_form">
+    <div class="name">
+      <label for="name"></label>
+      <input type="text" placeholder="Immie" name="name" id="name_input" required>
     </div>
-  <div class="card_title title-white">
-    <p>Card Title</p>
-  </div>
-</div>
-
-<div class="card 3">
-  <div class="card_image">
-    <img src="./img/card_lookasz_grid.png" />
-  </div>
-  <div class="card_title">
-    <p>Card Title</p>
-  </div>
-</div></div>
-<div class="card-row"> <div class="card 4">
-  <div class="card_image"> <img src="./img/card_lookasz2.png" /> </div>
-  <div class="card_title title-white">
-    <p>Card Title</p>
-  </div>
-</div>
-
-  <div class="card 5">
-  <div class="card_image">
-    <img src="./img/card_animations.png" />
+    <div class="email">
+      <label for="email"></label>
+      <input type="email" placeholder="Email" name="email" id="email_input" required>
     </div>
-  <div class="card_title title-white">
-    <p>Card Title</p>
-  </div>
-</div>
-
-<div class="card 6">
-  <div class="card_image">
-    <img src="./img/card_fasion.png" />
-  </div>
-  <div class="card_title">
-    <p>Card Title</p>
-  </div>
-</div></div>
-<div class="card-row"><div class="card 7">
-  <div class="card_image"> <img src="./img/card_honey.png" /> </div>
-  <div class="card_title title-white">
-    <p>Card Title</p>
-  </div>
-</div>
-
-  <div class="card 8">
-  <div class="card_image">
-    <img src="./img/card_mallh.png" />
-    </div>
-  <div class="card_title title-white">
-    <p>Card Title</p>
-  </div>
-</div>
-
-<div class="card 9">
-  <div class="card_image">
-    <img src="./img/card_lookasz2.png" />
-  </div>
-  <div class="card_title">
-    <p>Card Title</p>
-  </div>
-</div>
-  </div></div>
-
+       <div class="subject">
+      <label for="subject"></label>
       
- 
-
- 
-     
-</section>
-       
-
-      </div>
-       
-    
-
-
-
-
-  <div class="line"></div>
-
+    </div>
+    <div class="message">
+      <label for="message"></label>
+      <textarea name="message" placeholder="I chce spytać o ...." id="message_input" cols="30" rows="5" required></textarea>
+    </div>
+    <div class="submit">
+      <input type="submit" value="Wyslać wiadomosć" id="form_button" />
+    </div>
+  </form><!-- // End form -->
+</div><!-- // End #container -->
+<!-- partial -->
     </main>
+    <div class="line"></div>
     <footer class="footer">
     
-              <ul>
+              <ul class="social">
                 <li><a class="link" href=""><i class="fab fa-github "></i></a></li>
                 <li><a class="link" href=""><i class="fab fa-linkedin "></i></a></li>
                 <li><a class="link" href=""><i class="fab fa-facebook "></i></a></li>
-                
-            </ul>
+                            </ul>
         </div>
     </footer>
  <!-- partial -->
@@ -167,6 +91,7 @@
             horizontal: true
         });
     </script>
+      <script  src="./script.js"></script>
 </body>
 
 </html>
