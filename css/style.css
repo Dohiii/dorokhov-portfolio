@@ -451,7 +451,6 @@ textarea {
 }
 .submit {
   display: flex;
-  justify-content: center;
 }
 
 ::-webkit-input-placeholder {
@@ -482,7 +481,7 @@ textarea {
   font-size: 0.875em;
   font-weight: bold;
   outline: none;
-  padding: 15px 65px;
+  padding: 10px 100px;
   text-transform: uppercase;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -494,6 +493,13 @@ textarea {
 #form_button:hover {
   background: #909090;
   color: #f2f3eb;
+}
+.form-row {
+  display: flex;
+  justify-content: space-evenly;
+}
+.form-row input {
+  width: 48%;
 }
 
 @media screen and (max-width: 768px) {
@@ -513,7 +519,7 @@ textarea {
   }
 
   #form_button {
-    padding: 15px 25px;
+    padding: 10px 100px;
   }
 }
 
@@ -552,7 +558,7 @@ textarea {
     width: 300px;
   }
   textarea {
-    width: 300px;
+    width: 100%;
   }
   #submit {
     width: 300px;
