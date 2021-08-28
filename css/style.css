@@ -3,9 +3,7 @@
   padding: 0;
   margin: 0;
 }
-html {
-  scroll-behavior: smooth;
-}
+
 body {
   font-family: "Montserrat", sans-serif;
   background: #fff;
@@ -54,9 +52,12 @@ nav {
 }
 
 .nav-list {
-  list-style: none;
   display: flex;
-  margin-left: auto;
+  list-style: none;
+  justify-content: space-around;
+}
+.nav-list ul {
+  width: 100%;
 }
 .nav-list li {
   margin: 25px 15px;
@@ -66,9 +67,6 @@ nav {
   font-weight: 500;
   text-transform: uppercase;
   color: #909090;
-}
-.link.team {
-  border-bottom: black 1px solid;
 }
 
 .link:hover {
@@ -97,27 +95,6 @@ nav {
   display: flex;
   position: relative;
   color: #fff;
-  background-attachment: fixed;
-}
-.hero-content {
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
-.hero-content p {
-  text-align: start;
-  margin-left: auto;
-  width: 50%;
-  font-size: 50px;
-  font-weight: 300;
-}
-.hero-content h1 {
-  display: flex;
-  margin-left: 0.2em;
-  position: absolute;
-  font-size: 145px;
-  text-transform: uppercase;
-  font-weight: 600;
   background-attachment: fixed;
 }
 
@@ -375,11 +352,6 @@ h1 {
   width: 80px;
 }
 
-.email {
-  float: right;
-  width: 45%;
-}
-
 input[type="text"],
 [type="email"],
 select,
@@ -414,15 +386,6 @@ textarea:focus {
   padding: 0 0 0.875em 0;
 }
 
-.message {
-  float: none;
-}
-
-.name {
-  float: left;
-  width: 45%;
-}
-
 select {
   background: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png")
     no-repeat right;
@@ -435,20 +398,6 @@ select::-ms-expand {
   display: none;
 }
 
-.subject {
-  width: 100%;
-}
-
-.telephone {
-  width: 100%;
-}
-
-textarea {
-  line-height: 150%;
-  height: 150px;
-  resize: none;
-  width: 100%;
-}
 .submit {
   display: flex;
 }
@@ -499,7 +448,16 @@ textarea {
   justify-content: space-evenly;
 }
 .form-row input {
+  width: 50%;
+}
+.form-row .email {
   width: 48%;
+}
+textarea {
+  line-height: 150%;
+  height: 150px;
+  resize: none;
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -627,29 +585,5 @@ textarea {
     max-width: 100%;
     font-size: 18px;
     font-weight: 500;
-  }
-
-  .footer h1 {
-    font-size: 24px;
-    font-weight: 400;
-    color: white;
-    margin-top: 60px;
-  }
-  .footer p {
-    font-size: 14px;
-    color: white;
-  }
-
-  .footer ul {
-    display: flex;
-    flex-direction: row;
-    margin-top: 30px;
-  }
-  .footer a {
-    margin: 10px;
-    color: white;
-    font-size: 18px;
-    font-weight: 500;
-    text-transform: uppercase;
   }
 }

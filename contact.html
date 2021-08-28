@@ -22,7 +22,7 @@
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <title>Contact</title>
   </head>
 
@@ -33,8 +33,8 @@
           <a class="logo" href="index.html">Valerii Dorokhov</a>
           <ul class="nav-list">
             <li><a class="link" href="index.html">O Mnie</a></li>
-            <li><a class="link" href="projecty.html">Projecty</a></li>
-            <li><a class="link" href="contact.html">contact</a></li>
+            <li><a class="link" href="projecty.html">Projekty</a></li>
+            <li><a class="link" href="contact.html">Kontakt</a></li>
           </ul>
         </div>
       </nav>
@@ -50,7 +50,7 @@
               type="text"
               name="name"
               required
-              placeholder="Imie"
+              placeholder="Imię"
             />
             <input
               class="email"
@@ -62,16 +62,17 @@
           </div>
 
           <textarea
+          class="form-row"
             type="textarea"
             name="textarea"
             required
-            placeholder="Chce się spytac..."
+            placeholder="Mam pytanie..."
           ></textarea>
           <input type="text" name="_honey" style="display: none" />
           <input type="hidden" name="_captcha" value="false" />
           <!-- <input type="hidden" name="_next" value="https://dorokhov-portfolio.pl/thanks.html"> -->
           <div class="submit">
-            <button id="form_button" type="submit">Wyszli</button>
+            <button id="form_button" type="submit">Wyślij</button>
           </div>
         </form>
       </div>
@@ -79,18 +80,13 @@
     </main>
 
     <footer class="footer">
+    
       <ul class="social">
-        <li>
-          <a class="link" href=""><i class="fab fa-github"></i></a>
-        </li>
-        <li>
-          <a class="link" href=""><i class="fab fa-linkedin"></i></a>
-        </li>
-        <li>
-          <a class="link" href=""><i class="fab fa-facebook"></i></a>
-        </li>
-      </ul>
-    </footer>
+        <li><a class="link" href="https://github.com/Dohiii"><i class="fab fa-github "></i></a></li>
+        <li><a class="link" href="https://www.linkedin.com/in/valerii-dorokhov-534312211/"><i class="fab fa-linkedin "></i></a></li>
+                  </ul>
+</div>
+</footer>
     <!-- partial -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
